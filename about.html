@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #f39c12;
+        }
+
+        .about {
+            padding: 100px 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #f39c12;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .about img {
+            width: 300px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 20px 0;
+            border: 5px solid #f39c12;
+        }
+
+        .about .details {
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        .about .details h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .about .details p {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">My Portfolio</div>
+        <nav>
+            <a href="photo_Port.html" class="active">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">ติดต่อเรา</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+
+    <section class="about">
+        <h1>About Me</h1>
+        <img src="profile.jpg" alt="My Photo">
+        <p>Hello! I'm a passionate photographer dedicated to capturing life's beautiful moments. Through my lens, I strive to tell stories and create memories that last forever.</p>
+
+        <div class="details">
+            <h2>My SananPhoto</h2>
+            <p>I started my photography journey 10 years ago, inspired by the beauty of nature and the emotions of people. Over the years, I've honed my skills in various photography styles, including portrait, landscape, and event photography.</p>
+
+            <h2>Philosophy</h2>
+            <p>I believe every picture has a story to tell. My goal is to connect with my audience through my work and share the emotions and moments I've captured.</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 My Portfolio. All rights reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อเรา</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            line-height: 1.6;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .contact-info h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        .contact-info p strong {
+            color: #2c3e50;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 350px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* ปุ่ม Facebook */
+        .facebook-btn, .instagram-btn, .email-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #3b5998;
+            color: white;
+            font-size: 1.2em;
+            padding: 15px 20px;
+            border-radius: 50%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .facebook-btn:hover {
+            background-color: #2d4373;
+            transform: translateY(-5px);
+        }
+
+        .instagram-btn {
+            background-color: #E4405F; /* สีพื้นหลัง Instagram */
+            bottom: 110px; /* ปรับตำแหน่งให้ห่างจากปุ่ม Facebook */
+        }
+
+        .instagram-btn:hover {
+            background-color: #c13584;
+            transform: translateY(-5px);
+        }
+
+        .email-btn {
+            background-color: #0078D4; /* สีพื้นหลัง Email (สีฟ้าเหมือนใน Outlook) */
+            bottom: 190px; /* ปรับตำแหน่งให้ห่างจากปุ่ม Instagram */
+        }
+
+        .email-btn:hover {
+            background-color: #005b9f;
+            transform: translateY(-5px);
+        }
+
+        .facebook-btn i, .instagram-btn i, .email-btn i {
+            margin-right: 10px;
+        }
+
+        
+
+        /* การตั้งค่ารูปแบบมือถือ */
+        @media (max-width: 768px) {
+            .contact-methods {
+                width: 90%;
+            }
+
+            .facebook-btn, .instagram-btn, .email-btn {
+                bottom: 30px;
+                right: 20px;
+                font-size: 1em;
+            }
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <!-- <nav>
+            <a href="photo_Port.html" class="active">Home</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">ติดต่อเรา</a>
+            <a href="faq.html">สอบถามเพิ่มเติม</a>
+          </nav> -->
+        <h1>ติดต่อเรา</h1>
+        <p>หากคุณมีคำถามหรือข้อสงสัย โปรดติดต่อเราผ่านช่องทางด้านล่าง</p>
+
+    </header>
+
+    <section class="contact-methods">
+        <div class="contact-info">
+            <h2>ช่องทางการติดต่อ</h2>
+            <p><strong>Facebook: </strong> Sanan Photo</p>
+            <p><strong>Instagram: </strong> Sanan Photo</p>
+            <p><strong>Email: </strong> sananphoto99@gmail.com</p>
+            <p><strong>Tel: </strong> 065-2648549</p>
+            <p><strong>LineNumber: </strong> 0652648549</p>
+        </div>
+    </section>
+
+    <!-- <section class="map">
+        <h2>ตำแหน่งของเรา</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen="" loading="lazy"></iframe>
+    </section> -->
+
+    <footer>
+        <p>&copy; 2025 Sanan Photo. All rights reserved.</p>
+    </footer>
+
+    <!-- ปุ่ม Facebook -->
+    <a href="https://www.facebook.com/SananPhoto" class="facebook-btn" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <!-- ปุ่ม Instagram -->
+    <a href="https://www.instagram.com/sanann.photo/" class="instagram-btn" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <!-- ปุ่ม Email -->
+    <a href="mailto:sananphoto99@gmail.com" class="email-btn">
+        <i class="fas fa-envelope"></i>
+    </a>
+
+</body>
+</html>
